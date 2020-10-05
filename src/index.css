@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #7a7e9a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #293a5c;
+  font-family: Catamaran, sans-serif;
+  font-weight: 700;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+span {
+  color: #1d42d9;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.section-title {
+  position: relative;
+  max-width: 695px;
+  margin: -8px auto 60px;
+  text-align: center;
+}
+li {
+  display: list-item;
+}
+.box-btn ~ .box-btn {
+  margin-left: 1rem;
+}
+.box-btn {
+  position: relative;
+  color: #fff;
+  padding: 15px;
+  line-height: 1;
+  transition: all 0.5s;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #1d42d9;
+  border: 1px solid #1d42d9;
+}
+.box-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 50%;
+  background-color: #051242;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.box-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  width: 100%;
+  height: 50%;
+  background-color: #051242;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav-right-btn .box-btn:hover::after {
+  right: 0;
+}
+.nav-right-btn .box-btn:hover::before {
+  left: 0;
+}
+.box-btn:hover:after {
+  right: 0;
+}
+.box-btn:hover::before {
+  left: 0;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li:hover {
+  cursor: pointer;
+}
+/*
+Moblie
+*/
+@media (max-width: 599px) {
+  div.home_company-title {
+    flex: 1;
+  }
+  div.row-banner {
+    display: block;
+  }
+  div.choose_area {
+    display: block;
+  }
+  div.single-process {
+    flex: 0 1 50%;
+  }
+  div.process2 span.icon {
+    display: none;
+  }
+  div.logo_header {
+    display: none;
+  }
+  div.row-header {
+    display: block;
+  }
+  div.logo_header {
+    margin: auto;
+  }
+  div.__contact-mobile {
+    display: block;
+  }
+  div.__contact-list,
+  div.social_contact {
+    margin-left: 4rem;
+  }
+  ul.contact {
+    display: block;
+    text-align: center;
+  }
+  ul.contact li {
+    margin: auto;
+  }
+  div.container {
+    width: 320px;
+    max-width: 80%;
+  }
+
+  .home_case-list {
+    flex-direction: column;
+  }
+  .single-case {
+    max-width: 100%;
+  }
+  .row-feature {
+    flex-direction: column;
+  }
+  div.home_process .single-process div.icon span.icon img {
+    display: none;
+  }
+  .row-choose {
+    flex-direction: column;
+  }
+  .letsTalk{
+    margin-left: 12%;
+  }
+}
+/* Tablet*/
+@media (min-width: 600px) and (max-width: 913px) {
+  .container {
+    width: 780px;
+    max-width: 80%;
+  }
+  div.logo_header {
+    display: none;
+  }
+  div.row-header {
+    justify-content: start;
+  }
+  div.home_process .single-process div.icon span.icon img {
+    display: none;
+  }
+  .row-choose {
+    flex-direction: column;
+  }
+  .letsTalk{
+    margin-left: 12%;
+  }
+  .home_case-list {
+    flex-direction: column;
+  }
+  .single-case {
+    max-width: 100%;
+  }
+  .row_home_company {
+    flex-direction: column;
+  }
+}

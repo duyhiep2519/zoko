@@ -1,0 +1,19 @@
+.accordion-title:hover {
+  cursor: pointer;
+}
+.accordion-wrapper {
+  box-sizing: border-box;
+  background-color: #f1f2f6;
+  line-height: 1.8;
+  transition: 0.5s ease-in-out;
+}
+.accordion-content {
+  transition: all 0.5s ease-in-out;
+}
+.accordion-title {
+  background-color: #fff;
+  width: 100%;
+  padding: 1rem;
+  background-color: #ced6e0;
+  transition: all 0.5s ease-in-out;
+}

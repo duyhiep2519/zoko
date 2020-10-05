@@ -1,0 +1,138 @@
+.banner {
+  position: relative;
+
+  background-image: url("../../images/home-bg-2.png");
+  height: 100%;
+  width: 100%;
+}
+.banner-content {
+  flex: 0 50%;
+}
+.banner-img {
+  flex: 0 50%;
+}
+
+.banner-btn {
+  min-height: 3.3125rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.section_title {
+  position: relative;
+  max-width: 695px;
+  margin: 40px auto;
+  text-align: center;
+}
+.section_title h2 {
+  font-size: 40px;
+  text-transform: capitalize;
+  color: #293a5c;
+  margin-bottom: 20px;
+}
+.home_company {
+  margin: 1.5rem;
+  padding-bottom: 130px;
+  background: #f5faff;
+}
+.home_company-content {
+  display: flex;
+}
+
+.home_company-title {
+  flex: 0 40%;
+}
+.align-items-center {
+  align-items: center !important;
+}
+
+.choose-img {
+  flex: 0 1 40%;
+}
+.accordion {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.accordion-wrapper ~ .accordion-wrapper {
+  margin-top: 2rem;
+}
+.home_process {
+  background-color: #051242;
+  width: 100%;
+}
+.home_process-tittle {
+  position: relative;
+  text-align: center;
+  margin: -8px auto 60px;
+}
+.single-process {
+  position: relative;
+  flex: 0 24%;
+}
+
+.home_process .single-process div.icon {
+  background: #1e2a55;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 56px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.home_process .single-process div.icon span.icon img {
+  max-width: 100px;
+  margin-left: 100px;
+  position: absolute;
+  animation: run 5s linear infinite;
+}
+@keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 220%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+div.content-case {
+  background: #fff;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.single-case {
+  flex: 0 30%;
+  padding: 1rem;
+}
+.feature {
+  width: 100%;
+  background-color: #f5faff;
+}
+.feature-left {
+  flex: 40%;
+}
+.feature-right {
+  flex: 40%;
+}
+.feature-left ul li {
+  position: relative;
+  text-align: left;
+  color: #051242;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.feature-title {
+  text-align: left;
+  margin-left: 3rem;
+}
+a.letsTalk::before {
+  background-color: rgb(184, 174, 174);
+}
+a.letsTalk::after {
+  background-color: rgb(184, 174, 174);
+}

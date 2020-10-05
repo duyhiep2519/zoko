@@ -1,0 +1,69 @@
+.single-service {
+  position: relative;
+  flex: 0 0 31%;
+  max-width: 31%;
+  margin: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  background-color: #f1f2f6;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+}
+.single-service:hover::after {
+  right: 0;
+}
+.single-service:hover::before {
+  left: 0;
+}
+.single-service:hover {
+  cursor: pointer;
+}
+.single-service::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  z-index: -1;
+  background-color: #051242;
+
+  transition: all 0.5s;
+}
+
+.single-service::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 100%;
+  z-index: -1;
+  background: url("../../images/services/service-hover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: all 0.5s;
+}
+/*
+Moblie
+*/
+@media (max-width: 599px) {
+  div.row-service {
+    flex-direction: column;
+  }
+  div.single-service {
+    max-width: 100%;
+  }
+}
+/* Tablet*/
+@media (min-width: 600px) and (max-width: 913px) {
+  div.row-service {
+    flex-direction: column;
+  }
+  div.single-service {
+    max-width: 100%;
+  }
+}

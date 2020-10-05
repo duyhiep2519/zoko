@@ -1,0 +1,47 @@
+header {
+  position: relative;
+  padding: 5px 0;
+  background: #f5faff;
+  overflow: hidden;
+  width: 100%;
+}
+.__contact-mobile {
+  display: flex;
+}
+.row-header{
+  justify-content: space-around;
+}
+
+.logo_header {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+ul {
+  list-style: none;
+}
+ul.contact-social{
+  display: flex;
+  justify-content: center;
+}
+ul.contact{
+  margin-right:1rem ;
+}
+a {
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+}
+
+.__contact {
+  display: flex;
+}
+
+li.social + li.social {
+  margin-left: 1rem;
+}
+.navbar {
+  background-color: #051242;
+}
