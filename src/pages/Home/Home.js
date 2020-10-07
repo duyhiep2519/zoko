@@ -7,6 +7,9 @@ import Choose from "./components/Choose";
 import Process from "./components/Process";
 import HomeCase from "./components/HomeCase";
 import Feature from "./components/Feature";
+import TeamMember from "./components/TeamMember";
+import BlogPost from "./components/BlogPost";
+import Contact from "./components/Contact";
 const Home = () => {
   return (
     <div className="home">
@@ -59,6 +62,9 @@ const Home = () => {
       <Process />
       <HomeCase />
       <Feature />
+      <TeamMember/>
+      <BlogPost/>
+      <Contact/>
     </div>
   );
 };

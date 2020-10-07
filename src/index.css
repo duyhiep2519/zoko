@@ -181,8 +181,15 @@ Moblie
   .row-choose {
     flex-direction: column;
   }
-  .letsTalk{
+  .letsTalk {
     margin-left: 12%;
+  }
+  .row-blog {
+    flex-direction: column;
+  }
+  div.single-blog {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 /* Tablet*/
@@ -203,7 +210,14 @@ Moblie
   .row-choose {
     flex-direction: column;
   }
-  .letsTalk{
+  .row-blog {
+    flex-direction: column;
+  }
+  div.single-blog {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .letsTalk {
     margin-left: 12%;
   }
   .home_case-list {

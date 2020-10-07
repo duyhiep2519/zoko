@@ -136,3 +136,141 @@ a.letsTalk::before {
 a.letsTalk::after {
   background-color: rgb(184, 174, 174);
 }
+ul.team-social {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  bottom: -95px;
+  transition: 0.5s;
+  width: 100%;
+  left: 0;
+
+  transition: 0.6s;
+}
+ul.team-social li {
+  flex: 0 0 16%;
+}
+.team-slide {
+  justify-content: space-around;
+}
+.text-center {
+  text-align: center !important;
+}
+.teamMember .single-team {
+  position: relative;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.teamMember .single-team .content::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  background: #051242;
+  opacity: 0.95;
+  transition: 0.5s;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+.icon {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  color: blue;
+}
+
+.facebook::before {
+  content: "\f39e";
+  font-family: "Font Awesome 5 Brands";
+  opacity: 0;
+}
+
+.twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+  opacity: 0;
+}
+.mail::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0e0";
+  opacity: 0;
+}
+.youtube::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f167";
+  opacity: 0;
+}
+.teamMember .single-team:hover {
+  cursor: pointer;
+}
+.teamMember .single-team:hover .content::before {
+  height: 100%;
+}
+.teamMember .single-team:hover ul.team-social {
+  bottom: 21.5%;
+}
+.teamMember .single-team:hover .icon::before {
+  opacity: 1;
+}
+.line-bnt {
+  font-size: 14px;
+  color: #293a5c;
+  font-weight: 600;
+  line-height: 1;
+}
+.single-blog {
+  background: #fff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  transition: 0.5s;
+  box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.07);
+  z-index: 1;
+  padding: 1.2rem;
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+.blog-post {
+  position: relative;
+}
+.content ul.ul-blog {
+  display: flex;
+  justify-content: space-around;
+}
+.blog-post .single-blog .content ul.ul-blog li.li-blog a::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 1.5rem;
+  right: 9rem;
+  z-index: -1;
+  background: #7a7e9a;
+}
+.blog-post .single-blog::after {
+  position: absolute;
+  content: "";
+  background: #051242;
+  opacity: 0.8;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  width: 0;
+
+  transition: 0.5s;
+  z-index: -1;
+  height: 44.5%;
+}
+.blog-post .single-blog:hover::after {
+  width: 100%;
+  left: 0;
+}
