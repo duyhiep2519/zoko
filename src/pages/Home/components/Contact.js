@@ -21,7 +21,7 @@ const Contact = () => {
           <div className="contact-content">
             <div className="content">
               <form id="contactForm">
-                <div className="row">
+                <div className="row-form">
                   <div className="single-form">
                     <input
                       type="text"
@@ -75,7 +75,7 @@ const Contact = () => {
                       placeholder="Your message"
                     />
                   </div>
-                  <div className="single-form"><button type="submit">Submit</button></div>
+                  <div className="single-form"><button className="box-btn" type="submit">Submit</button></div>
                 </div>
               </form>
             </div>

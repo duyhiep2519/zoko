@@ -18,7 +18,7 @@ const BlogPost = () => {
         <div className="row row-blog">
           <div className="single-blog">
             <div className="blog-img">
-              <img src={blog1} />
+              <img src={blog1} alt="blog-img" />
             </div>
             <div className="content ">
               <ul className="ul-blog">
@@ -41,7 +41,7 @@ const BlogPost = () => {
           </div>
           <div className="single-blog">
             <div className="blog-img">
-              <img src={blog2} />
+              <img src={blog2} alt="blog-img" />
             </div>
             <div className="content ">
               <ul className="ul-blog">
@@ -64,7 +64,7 @@ const BlogPost = () => {
           </div>
           <div className="single-blog">
             <div className="blog-img">
-              <img src={blog3} />
+              <img src={blog3} alt="blog-img" />
             </div>
             <div className="content ">
               <ul className="ul-blog">

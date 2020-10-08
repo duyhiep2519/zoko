@@ -31,7 +31,7 @@ ul.main-nav-list {
 li.nav-item {
   margin-left: 1rem;
 }
-input[type="text"] {
+.nav-right form input[type="text"] {
   border: none;
   border-bottom: solid 1px;
   padding: 0.7rem 2px;

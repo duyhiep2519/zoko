@@ -85,6 +85,7 @@
   margin-left: 100px;
   position: absolute;
   animation: run 5s linear infinite;
+  top: 20%;
 }
 @keyframes run {
   0% {
@@ -259,7 +260,7 @@ ul.team-social li {
 .blog-post .single-blog::after {
   position: absolute;
   content: "";
-  background: #051242;
+  background: #101d4d;
   opacity: 0.8;
   bottom: 0;
   left: 100%;
@@ -274,3 +275,74 @@ ul.team-social li {
   width: 100%;
   left: 0;
 }
+.contact-img {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.contact-content {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.contact .content input.form-control {
+  height: 55px;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+input:focus {
+  height: 55px;
+  margin-bottom: 20px;
+  outline: none !important;
+  border: 1px solid #295c7e;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.row-form {
+  flex-direction: column;
+}
+.single-form {
+  margin-bottom: 1rem;
+  flex: 0 0 90%;
+  max-width: 90%;
+}
+textarea.form-control {
+  width: 100%;
+  border: 1px solid #eee;
+  max-height: 170px;
+  min-height: 170px;
+  box-shadow: none;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+.contact .content {
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 30px;
+}
+.single-form button.box-btn {
+  width: 30%;
+  max-width: 30%;
+}
+.contact-img,
+.feature-right {
+  animation: ani-img 2s linear infinite alternate;
+}
+@keyframes ani-img {
+  from {
+    transform: translateY(-2%);
+  }
+  to {
+    transform: translateY(2%);
+  }
+}
+.single-case:hover {
+  transform: translateY(-3%);
+  transition: all 0.5s ease-in-out ;
+  color:#3498db ;
+}
+.single-case:hover h3{
+  color: #3498db;
+}
+
