@@ -3,17 +3,17 @@
 }
 .accordion-wrapper {
   box-sizing: border-box;
-  background-color: #f1f2f6;
-  line-height: 1.8;
+  background-color: #fff;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   transition: 0.5s ease-in-out;
 }
 .accordion-content {
   transition: all 0.5s ease-in-out;
 }
 .accordion-title {
-  background-color: #fff;
+  text-align: center;
   width: 100%;
   padding: 1rem;
-  background-color: #ced6e0;
+  background-color: #fff;
   transition: all 0.5s ease-in-out;
 }

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Accordion.css";
 const Accordion = ({ tittle, content }) => {
   const [show, setShow] = useState(false);
+  const [visible, setVisible] = useState(false);
+
   return (
     <div className="accordion-wrapper">
       <div
@@ -14,7 +16,7 @@ const Accordion = ({ tittle, content }) => {
         {show && <i className="fas fa-arrow-circle-down"></i>}
         {tittle}
       </div>
-      {show && <div className="accordion-content">{content}</div>}
+      {show && visible && <div className="accordion-content">{content}</div>}
     </div>
   );
 };

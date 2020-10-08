@@ -2,6 +2,7 @@ import React from "react";
 import Accordion from "../../../components/Accordion/Accordion";
 import choose_img from "../../../images/choose-img.png";
 const Choose = () => {
+  
   return (
     <div className="choose_area ">
       <div className="container">
@@ -20,6 +21,7 @@ const Choose = () => {
           </div>
           <div className="accordion">
             <Accordion
+             
               tittle="Great Understanding"
               content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt sit amet consectetur adipiscing."
             ></Accordion>
