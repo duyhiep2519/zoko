@@ -23,12 +23,7 @@
   margin: 40px auto;
   text-align: center;
 }
-.section_title h2 {
-  font-size: 40px;
-  text-transform: capitalize;
-  color: #293a5c;
-  margin-bottom: 20px;
-}
+
 .home_company {
   margin: 1.5rem;
   padding-bottom: 130px;
@@ -56,13 +51,16 @@
   margin-top: 2rem;
 }
 .home_process {
-  background-color: #051242;
+  background-color: #cfd1db;
   width: 100%;
+  margin: 2rem;
+  padding: 1rem;
 }
 .home_process-tittle {
   position: relative;
   text-align: center;
   margin: -8px auto 60px;
+  
 }
 .single-process {
   position: relative;
@@ -290,7 +288,8 @@ ul.team-social li {
   margin-bottom: 20px;
   background-color: #f9f9f9;
 }
-input:focus,textarea:focus {
+input:focus,
+textarea:focus {
   height: 55px;
   margin-bottom: 20px;
   outline: none !important;
@@ -339,10 +338,9 @@ textarea.form-control {
 }
 .single-case:hover {
   transform: translateY(-3%);
-  transition: all 0.5s ease-in-out ;
-  color:#3498db ;
-}
-.single-case:hover h3{
+  transition: all 0.5s ease-in-out;
   color: #3498db;
 }
-
+.single-case:hover h3 {
+  color: #3498db;
+}

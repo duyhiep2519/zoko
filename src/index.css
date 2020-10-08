@@ -191,6 +191,21 @@ Moblie
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .row-contact {
+    flex-direction: column;
+  }
+  div.contact-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  div.contact-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .single-form button.box-btn {
+    width: 40%;
+    max-width: 40%;
+}
 }
 /* Tablet*/
 @media (min-width: 600px) and (max-width: 913px) {
@@ -228,5 +243,16 @@ Moblie
   }
   .row_home_company {
     flex-direction: column;
+  }
+  .row-contact {
+    flex-direction: column;
+  }
+  div.contact-img {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  div.contact-content {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
